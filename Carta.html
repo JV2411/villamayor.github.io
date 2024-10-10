@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binito</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+      <a href="index.html">
+        <img class="logo" src="logo.binito.negro.jpg" alt="logo"></a>
+      <h1>CARTA</h1>
+
+      <nav id="navegador" class="navegacion">
+        <ul>
+          <li><a href="reservas.html">RESERVAS</a></li>
+          <li><a href="Carta.html">CARTA</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li><a href="nuestro_local.html">NUESTRO LOCAL</a></li>
+        </ul>
+      </nav>
+
+      <a href="javascript:void(0);" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+
+    <main>
+      <img src="Carta vinos.jpeg" alt="IMG contacto" style="display: block; margin: 0 auto;">
+    </main>
+
+    <script>
+      function MiFuncion() {
+  var x = document.getElementById("navegador");
+  if (x.className === "navegacion") {
+    x.className += " responsive";
+  } else {
+    x.className = "navegacion";
+  }
+}
+    </script>
+    <footer>
+      <div class="footer-content">
+          <div class="LOGOS-REDES">
+              <a href="https://www.instagram.com" target="_blank">
+                  <img src="instagram.png" alt="Instagram">
+              </a>
+              <a href="https://www.tiktok.com" target="_blank">
+                  <img src="tik-tok.png" alt="TikTok">
+              </a>
+              <a href="https://www.whatsapp.com" target="_blank">
+                  <img src="whatsapp.png" alt="WhatsApp">
+              </a>
+          </div>
+          <p>&copy; 2024 Binito. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+</body>
+</html>
+

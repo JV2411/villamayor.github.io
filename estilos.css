@@ -1,0 +1,259 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+
+.logo {
+  width: 150px; 
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  content: url(logo.binito.color.jpg); 
+}
+
+h1 {
+  font-family: 'Rowdies', sans-serif;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ffffff;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #0b0a0a;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #56070c; 
+  color: #ffffff; 
+}
+
+.icono {
+  display: none; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: black;
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icono {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .navegacion.responsive {
+    display: block;
+  }
+
+  .navegacion.responsive ul {
+    display: block;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000; 
+  padding: 20px 0;
+  text-align: center; 
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.LOGOS-REDES {
+  margin-top: 10px;
+}
+
+.LOGOS-REDES a {
+  margin: 0 10px;
+}
+
+.LOGOS-REDES img {
+  width: 30px; 
+  height: auto; 
+}
+
+.cajacontenedora {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.caja {
+  border: 1px solid #ffffff;
+  width: 32%; 
+  min-height: 100px;
+  text-align: center;
+}
+
+.caja h2 {
+  margin-bottom: 20px; 
+}
+
+.caja img {
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .caja {
+    width: 48%; 
+  }
+}
+
+@media (max-width: 600px) {
+  .cajacontenedora {
+    flex-direction: column;
+  }
+
+  .caja {
+    width: 100%;
+  }
+}
+
+.formulario-contacto h1, .formulario-contacto h2 {
+  font-size: 2.5em; 
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+  font-size: 1.2em; 
+}
+
+.pagina-gracias h1, .pagina-gracias h2 {
+  font-size: 2.5em; 
+}
+
+.pagina-gracias p {
+  font-size: 1.5em;
+}
+
+.introduccion {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #c1c1c1;
+  border-radius: 8px;
+}
+
+.introduccion h2 {
+  font-size: 2em;
+  color: #6b2c2c;
+  font-family: 'Rowdies', sans-serif;
+}
+
+.introduccion p {
+  font-size: 1.2em;
+  color: #333;
+  font-family: 'Rowdies', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.iframe-container {
+  max-width: 1000px;
+  width: 100%;
+  height: 500px;
+  margin: 20px auto;
+}
+#iframe-container iframe {
+  width: 728px;
+  height: 90px;
+}
+
+
+@media (max-width: 600px) {
+  #iframe-container iframe {
+      width: 300px;
+      height: 600px;
+  }
+}
+header {
+  text-align: center;
+}

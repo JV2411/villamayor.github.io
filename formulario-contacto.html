@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIO DE CONTACTO</title>
+  <link rel="stylesheet" href="estilos.css"> <!-- Mantén el mismo estilo que el resto de la web -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="formulario-contacto">
+  <header>
+    <a href="index.html"><img class="logo" src="logo.binito.negro.jpg" alt="logo"></a>
+    <h1>FORMULARIO DE CONTACTO</h1>
+    <nav id="navegador" class="navegacion">
+      <ul>
+        <li><a href="reservas.html">RESERVAS</a></li>
+        <li><a href="Carta.html">CARTA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="nuestro_local.html">NUESTRO LOCAL</a></li>
+      </ul>
+    </nav>
+    <a href="javascript:void(0);" class="icono" onclick="MiFuncion()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </header>
+
+  <main>
+    <h2>Contáctanos</h2>
+    <form action="gracias.html" method="get">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="Escribe tu correo">
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+</body>
+</html>

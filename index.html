@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binito</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="logo.binito.negro.jpg" alt="logo"></a>
+    <h1>BINITO</h1>
+    <nav id="navegador" class="navegacion">
+        <ul>
+            <li><a href="reservas.html">RESERVAS</a></li>
+            <li><a href="Carta.html">CARTA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="nuestro_local.html">NUESTRO LOCAL</a></li>
+        </ul>
+    </nav>
+    <a href="javascript:void(0);" class="icono" onclick="MiFuncion()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </header>
+  <main>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="vino0oo_large.jpeg">
+      <source media="(min-width: 768px)" srcset="vino0oo_medium.jpeg">
+      <img class="banner" src="vino0oo_small.jpeg" alt="Banner de vino">
+    </picture>
+    <div class="introduccion">
+      <h2>Bienvenidos a BINITO</h2>
+      <p>Descubre BINITO, la vinoteca/bar de Buenos Aires donde el vino, la buena comida y la música en vivo se unen para ofrecer una experiencia inolvidable. ¡Bienvenido a un lugar donde cada detalle importa!</p>
+    </div>
+    <div class="cajacontenedora">
+      <div class="caja">
+        <h2>TAPEOS</h2>
+        <picture>
+          <source media="(min-width: 768px)" srcset="tapeo-grande.jpeg">
+          <source media="(min-width: 480px)" srcset="tapeo-mediano.jpeg">
+          <img src="tapeo-pequeno.jpeg" alt="TAPEOS">
+        </picture>
+      </div>
+      
+      <div class="caja">
+        <h2>VIÑEDO</h2>
+        <picture>
+          <source media="(min-width: 768px)" srcset="vinedo-grande.jpeg">
+          <source media="(min-width: 480px)" srcset="vinedo-mediano.jpeg">
+          <img src="vinedo-pequeno.jpeg" alt="Viñedo">
+        </picture>
+      </div>
+      
+      <div class="caja">
+        <h2>DESGUSTACIÓN</h2>
+        <picture>
+          <source media="(min-width: 768px)" srcset="desgustacion-grande.jpeg">
+          <source media="(min-width: 480px)" srcset="desgustacion-mediano.jpeg">
+          <img src="desgustacion-pequeno.jpeg" alt="Desgustaciones">
+        </picture>
+      </div>
+      <div class="iframe-container">
+        <iframe src="anuncio.html" id="anuncio-iframe" frameborder="0" scrolling="no"></iframe>
+    </div>
+    
+    <style>
+        #anuncio-iframe {
+            width: 728px;
+            height: 90px;
+        }
+  
+        @media (max-width: 600px) {
+            #anuncio-iframe {
+                width: 300px;
+                height: 600px;
+            }
+        }
+    </style>
+    
+    
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="LOGOS-REDES">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="tik-tok.png" alt="TikTok">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <p>&copy; 2024 Binito. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function MiFuncion() {
+      var x = document.getElementById("navegador");
+      if (x.className === "navegacion") {
+        x.className += " responsive";
+      } else {
+        x.className = "navegacion";
+      }
+    }
+  </script>
+</body>
+</html>

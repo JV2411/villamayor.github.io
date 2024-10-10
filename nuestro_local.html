@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Binito</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="logo.binito.negro.jpg" alt="logo">
+    </a>
+    <h1>NUESTRO LOCAL</h1>
+
+    <nav id="navegador" class="navegacion">
+      <ul>
+        <li><a href="reservas.html">RESERVAS</a></li>
+        <li><a href="Carta.html">CARTA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="nuestro_local.html">NUESTRO LOCAL</a></li>
+      </ul>
+    </nav>
+
+    <a href="javascript:void(0);" class="icono" onclick="MiFuncion()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </header>
+
+  <main>
+    <div class="cajacontenedora">
+      <div class="caja">
+        <h2></h2>
+        <picture>
+          <source media="(min-width: 768px)" srcset="image2_large.jpg"> 
+          <source media="(min-width: 480px)" srcset="image2_medium.jpg"> 
+          <img src="image2_small.jpg" alt="Local 1">
+        </picture>
+      </div>
+      <div class="caja">
+        <h2></h2>
+        <picture>
+          <source media="(min-width: 768px)" srcset="image3_large.jpg"> 
+          <source media="(min-width: 480px)" srcset="image3_medium.jpg"> 
+          <img src="image3_small.jpg" alt="Local 2">
+        </picture>
+      </div>
+      <div class="caja">
+        <h2></h2>
+        <picture>
+          <source media="(min-width: 768px)" srcset="image1_large.jpg"> 
+          <source media="(min-width: 480px)" srcset="image1_medium.jpg"> 
+          <img src="image1_small.jpg" alt="DJ en el local">
+        </picture>
+      </div>
+    </div>
+
+  
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138.655137879932!2d-58.43846173298404!3d-34.587372917359495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb586231a854d%3A0x877ff1d246349a3d!2sPalermo%20Soho%2C%20C1414%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1727373872127!5m2!1sen!2sar" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </main>
+
+  <script>
+   function MiFuncion() {
+  var x = document.getElementById("navegador");
+  if (x.className === "navegacion") {
+    x.className += " responsive";
+  } else {
+    x.className = "navegacion";
+  }
+}
+  </script>
+  <footer>
+    <div class="footer-content">
+        <div class="LOGOS-REDES">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="tik-tok.png" alt="TikTok">
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <p>&copy; 2024 Binito. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+
+</html>
+
