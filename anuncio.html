@@ -47,6 +47,13 @@ body {
     background-color: #7B68EE;
 }
 
+.iframe-container {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    border: none;
+}
+
 @media (max-width: 769px) {
     .anuncio-contenido {
         flex-direction: row;
@@ -91,17 +98,27 @@ body {
 }
 </style>
 <body>
-    <a href=https://elenitacorro.github.io/html%206.html">
-        <div class="anuncio-contenido">
-            <picture>
-                <source media="(max-width: 480px)" srcset="anuncio.elena.jpg">
-                <img src="https://raw.githubusercontent.com/elenacorro/elenacorro.github.io/refs/heads/main/anuncio.elena.jpg" class="anuncio-imagen" alt="Accesorios urbanos">
-            </picture>
-            
-            <h1 class="headline">para todos</h1>
-            
-            <button class="cta-button">Descubre más</button>
-        </div>
-    </a>
+    <div class="anuncio-contenido">
+        <picture>
+            <source media="(max-width: 480px)" srcset="anuncio.elena.jpg">
+            <img src="https://raw.githubusercontent.com/elenacorro/elenacorro.github.io/refs/heads/main/anuncio.elena.jpg" class="anuncio-imagen" alt="Accesorios urbanos">
+        </picture>
+        
+        <h1 class="headline">para todos</h1>
+        
+        <button class="cta-button" onclick="loadIframe()">Descubre más</button>
+    </div>
+    
+   
+    <iframe id="contentIframe" class="iframe-container" src="" style="display:none;"></iframe>
+
+    <script>
+        function loadIframe() {
+            // URL de la página web que quieres mostrar en el iframe
+            var iframe = document.getElementById('contentIframe');
+            iframe.src = "https://elenitacorro.github.io/html%206.html";
+            iframe.style.display = "block";
+        }
+    </script>
 </body>
 </html>
