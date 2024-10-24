@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 <body>
   <header>
@@ -37,29 +38,39 @@
     <div class="cajacontenedora">
       <div class="caja">
         <h2>TAPEOS</h2>
+        <a href="tapeo-grande.jpeg" data-lightbox="fotos" title="FOTO TAPEO BINITO">
+          <img src="imagen_chica.jpg">
         <picture>
           <source media="(min-width: 768px)" srcset="tapeo-grande.jpeg">
           <source media="(min-width: 480px)" srcset="tapeo-mediano.jpeg">
           <img src="tapeo-pequeno.jpeg" alt="TAPEOS">
         </picture>
+      </a>
       </div>
       
       <div class="caja">
         <h2>VIÑEDO</h2>
+        <a href="vinedo-grande.jpeg" data-lightbox="fotos" title="FOTO VIÑEDO BINITO">
+          <img src="imagen_chica.jpg">
+
         <picture>
           <source media="(min-width: 768px)" srcset="vinedo-grande.jpeg">
           <source media="(min-width: 480px)" srcset="vinedo-mediano.jpeg">
           <img src="vinedo-pequeno.jpeg" alt="Viñedo">
         </picture>
+      </a>
       </div>
       
       <div class="caja">
         <h2>DESGUSTACIÓN</h2>
+        <a href="desgustacion-grande.jpeg" data-lightbox="fotos" title="FOTO DESGUSTACION BINITO">
+          <img src="imagen_chica.jpg">
         <picture>
           <source media="(min-width: 768px)" srcset="desgustacion-grande.jpeg">
           <source media="(min-width: 480px)" srcset="desgustacion-mediano.jpeg">
           <img src="desgustacion-pequeno.jpeg" alt="Desgustaciones">
         </picture>
+      </a>
       </div>
       <div class="iframe-container">
         <iframe src="anuncio.html" id="anuncio-iframe" frameborder="0" scrolling="no"></iframe>
@@ -108,5 +119,6 @@
       }
     }
   </script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
