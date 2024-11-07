@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio Adaptable - Binito</title>
+    <style>
+        /* Estilo general para el anuncio */
+        .anuncio {
+            width: 100%;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        .anuncio img {
+            width: 100px;
+            height: auto;
+        }
+        .anuncio h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .anuncio button {
+            background-color: #8B0000;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .anuncio button:hover {
+            background-color: #A52A2A;
+        }
+
+        /* Estilos específicos para computadoras */
+        @media (min-width: 728px) {
+            .anuncio {
+                width: 728px;
+                height: 90px;
+                flex-direction: row;
+            }
+            .anuncio img {
+                margin-right: 20px;
+            }
+            .anuncio h2 {
+                font-size: 1.2em;
+                margin: 0;
+            }
+        }
+
+        /* Estilos específicos para celulares */
+        @media (max-width: 727px) {
+            .anuncio {
+                width: 300px;
+                height: 600px;
+                flex-direction: column;
+            }
+            .anuncio img {
+                margin-bottom: 20px;
+            }
+            .anuncio h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anuncio">
+        <img src="/mnt/data/logo.binito.negro.jpg" alt="Logo Binito">
+        <h2>HAPPY HOUR 2X1 en vinos seleccionados</h2>
+        <button onclick="window.location.href='https://www.tusitioweb.com'">Enterarme más</button>
+    </div>
+</body>
+</html>

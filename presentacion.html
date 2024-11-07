@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Binito</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
+
+        .presentacion {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Rowdies', cursive;
+        }
+
+        .diapositiva {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            opacity: 0;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .activa {
+            left: 0;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .flecha {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .flecha-izquierda {
+            left: 10px;
+        }
+
+        .flecha-derecha {
+            right: 10px;
+        }
+
+        .nombre-binito {
+            display: flex;
+            align-items: center;
+            font-size: 6em;
+            color: #000;
+        }
+
+        .nombre-binito img {
+            height: 1.5em;
+            margin-right: 10px;
+        }
+
+        .titulo {
+            font-size: 2em;
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .imagenes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .imagenes img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            object-fit: cover;
+            border: 10px solid #000;
+            border-radius: 15px;
+        }
+
+        .videos {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .titulo-videos {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px;
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .lista-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista-items li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            font-size: 1.7em;
+        }
+
+        .punto {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="presentacion">
+        <div class="diapositiva activa">
+            <div class="nombre-binito">
+                <img src="logo.binito.negro.png" alt="Logo Binito">
+                INITO
+                
+            </div>
+        </div>
+        <div class="diapositiva">
+            <div class="titulo">WIREFRAMES COMPUTADORA</div>
+            <div class="imagenes">
+                <div class="marco-computadora">
+                    <img src="wfc1.png" alt="Wireframe Computadora 1">
+                </div>
+                <div class="marco-computadora">
+                    <img src="wfc2.png" alt="Wireframe Computadora 2">
+                </div>
+                <div class="marco-computadora">
+                    <img src="wfc3.png" alt="Wireframe Computadora 3">
+                </div>
+                <div class="marco-computadora">
+                    <img src="wfc4.png" alt="Wireframe Computadora 4">
+                </div>
+                <div class="marco-computadora">
+                    <img src="wfc5.png" alt="Wireframe Computadora 5">
+                </div>
+            </div>
+        </div>
+        <div class="diapositiva">
+            <div class="titulo">WIREFRAMES CELULARES</div>
+            <div class="imagenes">
+                <div class="marco-celular">
+                    <img src="wfce1.jpg" alt="Wireframe Celular 1">
+                </div>
+                <div class="marco-celular">
+                    <img src="wfce2.jpg" alt="Wireframe Celular 2">
+                </div>
+                <div class="marco-celular">
+                    <img src="wfce3.jpg" alt="Wireframe Celular 3">
+                </div>
+                <div class="marco-celular">
+                    <img src="wfce4.jpg" alt="Wireframe Celular 4">
+                </div>
+            </div>
+        </div>
+        <div class="diapositiva">
+            <div class="titulo-videos" style="margin-top: 100px;">FUNCIONAMIENTO EN DIFERENTES DISPOSITIVOS</div>
+            <div class="videos">
+                <div class="video-container">
+                    <video id="video-computadora" autoplay muted>
+                        <source src="2.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video id="video-celular" autoplay muted style="transform: rotate(90deg);">
+                        <source src="1.mp4" type="video/mp4">
+                        Tu navegador no soporta el video.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="diapositiva">
+            <div class="contenido">
+                <h2 style="font-size: 3em; text-align: center; color: black; position: absolute; top: 20px; width: 100%;">DISEÑO Y FUNDAMENTACION</h2>
+                <ul class="lista-items">
+                    <li><span class="punto"></span> Diseño claro y simple, con elementos visuales y funciones que se encuentran de manera organizada, evitando el exceso de información.</li>
+                    <li><span class="punto"></span> Hecho para complementar el bar de vinos.</li>
+                    <li><span class="punto"></span> Paleta de colores y logos propios y destacados de la marca.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="diapositiva">
+            <h1 style="font-size: 3em; text-align: center; color: black; font-family: 'Rowdies', cursive;">GRACIAS POR ESCUCHAR</h1>
+            <button onclick="window.location.href='index.html'" style="margin-top: 50px; padding: 15px 30px; font-size: 1.5em; cursor: pointer;">Volver al inicio</button>
+
+        </div>
+        <button class="flecha flecha-izquierda" id="prev">
+            <img src="prev.png" alt="Anterior">
+        </button>
+        <button class="flecha flecha-derecha" id="next">
+            <img src="next.png" alt="Siguiente">
+        </button>
+    </div>
+
+    <script>
+        let indiceActual = 0;
+        const diapositivas = document.querySelectorAll('.diapositiva');
+        const totalDiapositivas = diapositivas.length;
+
+        document.getElementById('next').addEventListener('click', () => {
+            cambiarDiapositiva(1);
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            cambiarDiapositiva(-1);
+        });
+
+        function cambiarDiapositiva(direccion) {
+            diapositivas[indiceActual].classList.remove('activa');
+            indiceActual = (indiceActual + direccion + totalDiapositivas) % totalDiapositivas;
+            diapositivas[indiceActual].classList.add('activa');
+            reproducirVideo();
+        }
+
+        function reproducirVideo() {
+            const videoComputadora = document.getElementById('video-computadora');
+            const videoCelular = document.getElementById('video-celular');
+
+            if (indiceActual === 3) { // Diapositiva 4
+                videoComputadora.play();
+                videoCelular.play();
+            } else {
+                if (videoComputadora) videoComputadora.pause();
+                if (videoCelular) videoCelular.pause();
+            }
+        }
+    </script>
+</body>
+</html>
