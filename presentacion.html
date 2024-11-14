@@ -20,7 +20,7 @@
 
         .presentacion { position: relative; width: 100vw; height: 100vh; font-family: 'Rowdies', cursive; overflow: auto; }
 
-        .diapositiva { position: absolute; top: 0; left: 100%; width: 100%; min-height: 100vh; transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; opacity: 0; z-index: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px; overflow-y: auto; }
+        .diapositiva { position: absolute; top: 0; left: 0%; width: 100%; min-height: 100vh; transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; opacity: 0; z-index: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px; overflow-y: auto; }
 
         .activa {
             left: 0;
@@ -36,14 +36,16 @@
             border: none;
             cursor: pointer;
             z-index: 2;
-         width: 60px; height: 60px;}
+         width: 60px; height: 60px;
+        font-size: 30px;}
+
 
         .flecha-izquierda {
-            left: 10px;
+            left: 30px;
         }
 
         .flecha-derecha {
-            right: 10px;
+            right: 30px;
         }
 
         .nombre-binito {
@@ -144,7 +146,7 @@
         .punto {
             width: 10px;
             height: 10px;
-            background-color:#000;
+            background-color: red;
             border-radius: 50%;
             display: inline-block;
             margin-right: 10px;
@@ -180,16 +182,12 @@
                 font-size: 4vw;
                 margin-bottom: 15px;
             }
-
-            hpx;
-                height:  50px;
-            }
+            
 
             .flecha img {
                 width: 100%;
                 height: auto;
             }
-        }
     </style>
 </head>
 <body>
@@ -286,4 +284,4 @@
         }
     </script>
 </body>
-</html>
+</html> 
